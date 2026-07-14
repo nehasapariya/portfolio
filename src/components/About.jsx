@@ -51,8 +51,8 @@ export default function About() {
             className="flex flex-col items-center gap-5"
           >
             <div className="relative">
-              <div className="w-60 h-60 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-2 border-white dark:border-white/10 shadow-2xl shadow-violet-200/40 dark:shadow-violet-900/30">
-                <img src="neha_sapariya_pic.png" alt="Neha Sapariya" className="w-full h-full object-cover" />
+              <div className="w-60 h-60 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-2 border-white dark:border-white/10 shadow-2xl shadow-[#999B84]/20 dark:shadow-[#999B84]/10">
+                <img src="src/assets/neha_sapariya_pic.png" alt="Neha Sapariya" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>
@@ -69,7 +69,7 @@ Prior to transitioning into full-stack web development, I worked as an iOS Devel
            <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
 I enjoy creating responsive, scalable, and efficient applications that provide seamless user experiences. I'm continuously learning new technologies and best practices to build modern, high-quality software solutions.
             </p>
-            <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 grad-bg text-white font-semibold rounded-xl hover:opacity-90 hover:shadow-lg hover:shadow-violet-300/40 transition-all duration-200">
+            <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 grad-bg text-white font-semibold rounded-xl hover:opacity-90 hover:shadow-lg hover:shadow-[#999B84]/40 transition-all duration-200">
               Know More <ArrowRight size={16} />
             </a>
           </motion.div>

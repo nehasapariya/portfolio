@@ -25,15 +25,15 @@ export default function Contact() {
     }, 1000)
   }
 
-  const inputCls = "w-full px-4 py-3 bg-slate-50 dark:bg-[#1A1025] border border-slate-200 dark:border-[#7C3AED]/20 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-white/30 outline-none focus:border-[#7C3AED] dark:focus:border-[#A78BFA] focus:ring-2 focus:ring-violet-100 dark:focus:ring-[#7C3AED]/15 transition"
+  const inputCls = "w-full px-4 py-3 bg-slate-50 dark:bg-[#1a1a1a] border border-slate-200 dark:border-[#999B84]/20 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-white/30 outline-none focus:border-[#999B84] dark:focus:border-[#999B84] focus:ring-2 focus:ring-[#999B84]/15 transition"
   const labelCls = "block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1.5 uppercase tracking-wide"
 
   return (
     <section id="contact" className="py-24 bg-white dark:bg-[#0D0D1A] transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} className="text-center mb-14">
-          <span className="text-3xl font-bold text-[#7C3AED] dark:text-[#A78BFA] uppercase tracking-widest">Get In Touch</span>
-          <h2 className="text-lg font-black text-slate-900 dark:text-white mt-2 tracking-tight">
+          <span className="text-lg font-bold text-[#999B84] uppercase tracking-widest">Get In Touch</span>
+          <h2 className="text-3xl font-black text-slate-900 dark:text-white mt-2 tracking-tight">
             Let's <span className="grad-text">Work Together</span>
           </h2>
         </motion.div>
@@ -89,12 +89,12 @@ export default function Contact() {
                 <textarea value={form.message} onChange={set('message')} rows={5} placeholder="Tell me about your project…" required className={inputCls + ' resize-none'} />
               </div>
               <button type="submit" disabled={sending}
-                className="flex items-center justify-center gap-2 px-6 py-3.5 grad-bg text-white font-semibold rounded-xl hover:opacity-90 hover:shadow-lg hover:shadow-violet-400/30 disabled:opacity-50 transition-all duration-200 self-start">
+                className="flex items-center justify-center gap-2 px-6 py-3.5 grad-bg text-white font-semibold rounded-xl hover:opacity-90 hover:shadow-lg hover:shadow-[#999B84]/30 disabled:opacity-50 transition-all duration-200 self-start">
                 {sending ? 'Sending…' : <><Send size={16} /> Send Message</>}
               </button>
               {sent && (
                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                  className="text-sm text-[#7C3AED] dark:text-[#A78BFA] font-medium">
+                  className="text-sm text-[#999B84] font-medium">
                   ✓ Message sent! I'll get back to you soon.
                 </motion.p>
               )}

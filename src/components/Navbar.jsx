@@ -31,7 +31,7 @@ export default function Navbar() {
           {NAV_ITEMS.map(item => (
             <li key={item}>
               <a href={`#${item.toLowerCase()}`}
-                className="px-3.5 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#7C3AED] dark:hover:text-[#A78BFA] rounded-lg hover:bg-violet-50 dark:hover:bg-violet-500/10 transition-all duration-200">
+                className="px-3.5 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#999B84] dark:hover:text-[#999B84] rounded-lg hover:bg-[#999B84]/10 dark:hover:bg-[#999B84]/10 transition-all duration-200">
                 {item}
               </a>
             </li>
@@ -55,29 +55,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-[#0D0D1A] border-b border-slate-100 dark:border-white/5 overflow-hidden">
-            <ul className="px-6 pb-4 pt-2 flex flex-col gap-1">
-              {NAV_ITEMS.map(item => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}
-                    className="block px-3 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#7C3AED] dark:hover:text-[#A78BFA] hover:bg-violet-50 dark:hover:bg-violet-500/10 rounded-lg transition-all">
-                    {item}
-                  </a>
-                </li>
-              ))}
-              <li className="pt-1">
-                <a href="/Neha_Sapariya.pdf" download="Neha_Sapariya.pdf" target="_blank" rel="noreferrer"
-                  className="flex items-center justify-center gap-2 px-4 py-2.5 grad-bg text-white text-sm font-semibold rounded-lg">
-                  <Download size={14} /> Download CV
-                </a>
-              </li>
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+     
     </header>
   )
 }

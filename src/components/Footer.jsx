@@ -6,7 +6,7 @@ const services   = ['Web Development', 'API Development']
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D0D1A] text-slate-400  transition-colors duration-300">
+    <footer className="bg-black/50 dark:bg-[#0D0D1A] text-white  transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
@@ -22,7 +22,7 @@ export default function Footer() {
                 { icon: Mail,         href: 'mailto:patel.neha4790@gmail.com' },
               ].map(({ icon: Icon, href }, i) => (
                 <a key={i} href={href} target="_blank" rel="noreferrer"
-                  className="w-9 h-9 bg-white/5 border border-[#7C3AED]/20 rounded-xl flex items-center justify-center hover:bg-[#7C3AED] hover:border-[#7C3AED] hover:text-white transition-all duration-200">
+                  className="w-9 h-9 bg-white/5 border border-[#999B84]/20 rounded-xl flex items-center justify-center hover:bg-[#999B84] hover:border-[#999B84] hover:text-white transition-all duration-200">
                   <Icon size={15} />
                 </a>
               ))}
@@ -35,7 +35,7 @@ export default function Footer() {
               {quickLinks.map(link => (
                 <li key={link}>
                   <a href={`#${link.toLowerCase()}`}
-                    className="text-sm flex items-center gap-1 hover:text-[#A78BFA] transition-colors duration-200 group">
+                    className="text-sm flex items-center gap-1 hover:text-[#999B84] transition-colors duration-200 group">
                     <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 -ml-1 transition" />
                     {link}
                   </a>
@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {services.map(s => (
                 <li key={s} className="text-sm flex items-center gap-1 group">
-                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 -ml-1 text-[#A78BFA] transition" />
+                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 -ml-1 text-[#999B84] transition" />
                   {s}
                 </li>
               ))}
@@ -60,13 +60,13 @@ export default function Footer() {
             <h4 className="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact</h4>
             <div className="flex flex-col gap-3.5">
               <a href="mailto:patel.neha4790@gmail.com" className="flex items-start gap-3 text-sm hover:text-[#A78BFA] transition-colors">
-                <Mail size={15} className="text-[#A78BFA] mt-0.5 flex-shrink-0" /> patel.neha4790@gmail.com
+                <Mail size={15} className="text-[#999B84] mt-0.5 flex-shrink-0" /> patel.neha4790@gmail.com
               </a>
               <div className="flex items-start gap-3 text-sm">
-                <MapPin size={15} className="text-[#A78BFA] mt-0.5 flex-shrink-0" /> India
+                <MapPin size={15} className="text-[#999B84] mt-0.5 flex-shrink-0" /> India
               </div>
               <div className="flex items-center gap-2 text-sm">
-                <span className="w-2 h-2 bg-[#A78BFA] rounded-full animate-pulse flex-shrink-0" />
+                <span className="w-2 h-2 bg-[#999B84] rounded-full animate-pulse flex-shrink-0" />
                 Available for hire
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-[#7C3AED]/10">
+      <div className="border-t border-[#999B84]/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-3">
           <p className="text-xs text-slate-500">© 2026 Neha Sapariya. All rights reserved.</p>
         </div>

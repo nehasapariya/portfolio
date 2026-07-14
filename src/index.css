@@ -9,13 +9,10 @@
 
 @layer utilities {
   .grad-text {
-    background: linear-gradient(135deg, #7C3AED, #EC4899);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #999B84;
   }
   .grad-bg {
-    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    background: #999B84;
   }
   .section-label {
     display: inline-block;
@@ -23,8 +20,8 @@
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #7C3AED;
+    color: #999B84;
     margin-bottom: 0.5rem;
   }
-  .dark .section-label { color: #A78BFA; }
+  .dark .section-label { color: #999B84; }
 }
